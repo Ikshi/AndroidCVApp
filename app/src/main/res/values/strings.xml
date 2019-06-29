@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CreateCV</string>
+    <string name="text">Personal Details:</string>
+    <string name="Name">Name:</string>
+    <string name="Address">Address:</string>
+    <string name="Phone">Phone Number:</string>
+    <string name="Email">Email Address:</string>
+    <string name="DOB">Date Of Birth:</string>
+    <string name="Next">Next</string>
+    <string name="str_hint_name">Name</string>
+    <string name="Education">Education Background:</string>
+    <string name="college">College:</string>
+    <string name="secondary">Secondary:</string>
+    <string name="primary">Primary:</string>
+    <string name="personal_skills">Personal Skills:</string>
+    <string name="first">First:</string>
+    <string name="second">Second:</string>
+    <string name="third">Third:</string>
+    <string name="cv">Create Your CV.</string>
+    <string name="save">SAVE</string>
+    <string name="create">CREATE</string>
+
+</resources>

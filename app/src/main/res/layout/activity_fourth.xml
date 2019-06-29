@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.mobimove.createcv.FourthActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/details_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/text"
+            android:textColor="@color/Dark_purple"
+            android:textSize="@dimen/subtitle" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/Name"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/img_edt_name"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/img_edt_name"
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pencil"
+                android:clickable="true"
+                android:onClick="editName"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dob_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/DOB"
+            android:textColor="@color/Blue"
+
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:inputType="text"
+                android:id="@+id/editText_dob"
+                android:layout_toLeftOf="@+id/img_edt_dob"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="editDOB"
+                android:id="@+id/img_edt_dob"
+
+                />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/Email"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:inputType="text"
+                android:id="@+id/editText_email"
+                android:layout_toLeftOf="@+id/img_edt_email"
+
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_edt_email"
+                android:clickable="true"
+                android:onClick="editEmail"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/Phone"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:inputType="number"
+                android:id="@+id/edt_phone"
+                android:layout_toLeftOf="@+id/img_edt_phone"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:id="@+id/img_edt_phone"
+                android:layout_alignParentRight="true"
+                android:onClick="editPhone"
+                android:clickable="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/Address"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/edt_address"
+                android:inputType="text"
+                android:layout_toLeftOf="@+id/img_edt_address"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_edt_address"
+                android:onClick="editAddress"
+                android:clickable="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Education_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/Education"
+            android:textColor="@color/Dark_purple"
+            android:textSize="@dimen/subtitle" />
+
+
+        <TextView
+            android:id="@+id/college_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/college"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_college"
+                android:inputType="text"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/img_edt_college"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_edt_college"
+                android:onClick="editCollege"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/secondary"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/edt_secondary"
+                android:inputType="text"
+                android:layout_toLeftOf="@+id/img_edt_secondary"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:id="@+id/img_edt_secondary"
+                android:layout_alignParentRight="true"
+                android:onClick="editSecondary"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id = "@+id/list_secondary"
+            android:visibility="gone">
+        </ListView>
+
+        <TextView
+            android:id="@+id/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/primary"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/edt_primary"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/img_edt_primary"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:id="@+id/img_edt_primary"
+                android:layout_alignParentRight="true"
+                android:onClick="editPrimary"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id = "@+id/list_primary"
+            android:visibility="gone">
+        </ListView>
+
+        <TextView
+            android:id="@+id/personal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/personal_skills"
+            android:textColor="@color/Dark_purple"
+            android:textSize="@dimen/subtitle" />
+
+        <TextView
+            android:id="@+id/first_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/first"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/edt_first"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/img_edt_first"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_edt_first"
+                android:onClick="editFirst"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id = "@+id/list_first"
+            android:visibility="gone">
+        </ListView>
+
+        <TextView
+            android:id="@+id/second_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/second"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_second"
+                android:visibility="gone"
+                android:inputType="text"
+                android:layout_toLeftOf="@+id/img_edt_second"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_edt_second"
+                android:onClick="editSecond"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/third_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/third"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/subtitle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/Text_Size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_third"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/img_edt_third"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pencil"
+                android:id="@+id/img_edt_third"
+                android:layout_alignParentRight="true"
+                android:onClick="editThird"
+                android:clickable="true"
+                />
+
+         </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
